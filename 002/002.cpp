@@ -5,8 +5,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int i = 1;
     int j, total = 0;
     for (int k = 0; k < 4000000; k = i+j) {

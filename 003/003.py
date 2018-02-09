@@ -12,9 +12,14 @@ def isPrime(number):
     return 0
 
 
-for i in range(2, target // 2):
-    k = target / i
-    if k % 1 == 0:
-        if isPrime(k) == 0:
-            print("The highest prime factorial is", int(k))
-            break
+def main(target):
+    for i in range(2, target // 2):
+        k = target / i
+        if k % 1 == 0:
+            if isPrime(k) == 0:
+                print("The highest prime factorial is", int(k))
+                break
+
+
+if __name__ == "__main__":
+    main(target)

@@ -4,7 +4,6 @@
 
 target = 600851475143
 
-
 def isPrime(number)
     (2..number.to_i/2).each do |j|
         if number % j == 0
@@ -13,7 +12,6 @@ def isPrime(number)
     end
     return 1
 end
-
 
 (2..target/2).each do |i|
     k = target.to_f / i
