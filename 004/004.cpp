@@ -3,11 +3,9 @@
 
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
-using namespace std;
-
-bool isPalindrome (int k) {
-    string r = to_string(k);
-    int len = (int)r.length();
+bool isPalindrome(int k) {
+    std::string r = std::to_string(k);
+    int len = static_cast<int>(r.length());
     for (int s = 0; s < len / 2; s++) {
         if (r[s] != r[len-(1+s)])
             return false;
@@ -27,5 +25,6 @@ int main() {
             }
         }
     }
-    cout << "The largest palindrome in question is " << control << endl;
+    std::cout << "The largest palindrome in question is "
+              << control << std::endl;
 }

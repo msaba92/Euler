@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // What is the 10 001st prime number?
 
 function findprime() {

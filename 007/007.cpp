@@ -4,10 +4,8 @@
 
 // What is the 10 001st prime number?
 
-using namespace std;
-
-int findprime(){
-    vector<int> knownprimes = {2};
+int findprime() {
+    std::vector<int> knownprimes = {2};
     int i = 3;
     bool prime = false;
 
@@ -28,7 +26,7 @@ int findprime(){
     return knownprimes.back();
 }
 
-int main(){
+int main() {
     int number = findprime();
-    cout << "The number is " << number << "." << endl;
+    std::cout << "The number is " << number << "." << std::endl;
 }

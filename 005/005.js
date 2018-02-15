@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
 function finder() {
@@ -6,7 +8,7 @@ function finder() {
 
     for (;;) {
         for (var i = 11; i <= 20; i++) {
-            if (step % i == 0) {
+            if (step % i === 0) {
                 found = true;
             } else {
                 found = false;

@@ -1,10 +1,10 @@
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
-class main {
+class Main {
     public static boolean isPalindrome(int k) {
         String r = String.valueOf(k);
         for (int s = 0; s < r.length() / 2; s++) {
-            if (r.charAt(s) != r.charAt(r.length() - (1+s))) {
+            if (r.charAt(s) != r.charAt(r.length() - (1 + s))) {
                 return false;
             }
         }

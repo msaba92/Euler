@@ -3,8 +3,6 @@
 // By considering the terms in the Fibonacci sequence whose values
 // do not exceed four million, find the sum of the even-valued terms.
 
-using namespace std;
-
 int main() {
     int i = 1;
     int j, total = 0;
@@ -15,5 +13,5 @@ int main() {
             total += k;
         }
     }
-    cout << total << endl;
+    std::cout << total << std::endl;
 }

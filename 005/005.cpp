@@ -3,8 +3,6 @@
 
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
-using namespace std;
-
 int Finder() {
     int step = 20;
     bool found = false;
@@ -27,5 +25,5 @@ int Finder() {
 
 int main() {
     int number = Finder();
-    cout << "The number in question is " << number << "." << endl;
+    std::cout << "The number in question is " << number << "." << std::endl;
 }

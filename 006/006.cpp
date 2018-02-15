@@ -4,8 +4,6 @@
 // Find the difference between the sum of the squares of the
 // first one hundred natural numbers and the square of the sum.
 
-using namespace std;
-
 int difference() {
     int tsum = 0;
     int tdiff = 0;
@@ -19,5 +17,6 @@ int difference() {
 }
 
 int main() {
-    cout << "The number in question is " << difference() << "." << endl;
+    std::cout << "The number in question is " << difference()
+              << "." << std::endl;
 }
