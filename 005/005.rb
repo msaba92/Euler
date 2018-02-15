@@ -3,25 +3,23 @@
 # What is the smallest positive number that is
 # evenly divisible by all of the numbers from 1 to 20?
 
-def finder()
+def finder
     found = false
     step = 20
-    while true
+    loop do
         # If n % k == 0 then obviously n % (any factor of k) == 0,
         # so we can skip half the steps in this range
         (11..20).each do |i|
-            if step % i == 0
+            if (step % i).zero?
                 found = true
             else
                 found = false
                 break
             end
         end
-        if found
-            return step
-        end
+        return step if found
         step += 20
     end
 end
 
-puts "The number in question is #{finder()}."
+puts "The number in question is #{finder}."

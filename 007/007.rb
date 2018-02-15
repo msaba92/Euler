@@ -3,26 +3,24 @@
 # What is the 10 001st prime number?
 
 
-def findprime()
+def findprime
     knownprimes = [2]
     i = 3
     prime = false
 
-    while knownprimes.length < 10001
+    while knownprimes.length < 10_001
         knownprimes.each do |x|
-            if i % x == 0
+            if (i % x).zero?
                 prime = false
                 break
             else
                 prime = true
             end
         end
-        if prime
-            knownprimes.append(i)
-        end
+        knownprimes.append(i) if prime
         i += 1
     end
     return knownprimes[-1]
 end
 
-puts "The number is #{findprime()}."
+puts "The number is #{findprime}."

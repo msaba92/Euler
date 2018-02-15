@@ -5,9 +5,7 @@
 def main
     total = 0
     (1..999).each do |n|
-        if n % 3 == 0 or n % 5 == 0
-            total = total + n
-        end
+        total += n if (n % 3).zero? || (n % 5).zero?
     end
     puts total
 end
