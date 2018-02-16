@@ -2,7 +2,6 @@
 
 # What is the 10 001st prime number?
 
-
 def findprime
     knownprimes = [2]
     i = 3
