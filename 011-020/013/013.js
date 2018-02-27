@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 function readfile(filename) {
     var fs = require("fs");
     var contents = fs.readFileSync(filename);
@@ -17,4 +16,3 @@ function readfile(filename) {
     }
     console.log(total.toString().split(".").join("").substr(0, 10));
 })();
-

@@ -21,7 +21,6 @@ class Main {
         return total;
     }
 
-
     public static void main(String[] args) throws Exception {
         double total = processer();
         System.out.printf("%s\n", BigDecimal.valueOf(total).toPlainString().substring(0, 10));

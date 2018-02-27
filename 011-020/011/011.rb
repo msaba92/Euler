@@ -5,7 +5,7 @@ grid = []
 File.open("grid", "r") do |mygrid|
     i = 0
     mygrid.each_line do |line|
-        grid[i] = line.split()
+        grid[i] = line.split
         i += 1
     end
 end
@@ -15,7 +15,7 @@ biggest = 0
 (0..grid.length - 1).each do |row|
     (0..grid[row].length - 1).each do |column|
         mynumber = grid[row][column].to_i
-        total = [mynumber]*4
+        total = [mynumber] * 4
         (1..3).each do |x|
             # Vertical
             begin
@@ -43,9 +43,7 @@ biggest = 0
             end
         end
 
-        if total.max > biggest
-            biggest = total.max
-        end
+        biggest = total.max if total.max > biggest
     end
 end
 
